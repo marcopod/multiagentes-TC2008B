@@ -11,7 +11,7 @@ Marco Ottavio Podesta Vezzali A00833604
 Sergio Ortíz Malpica A01284951
 
 # Entrega 1
-![Diagramas_01](Entrega_1\Multiagentes_Eq4.jpg "Diagramas de la primera entrega")
+![Diagramas_01](Entrega_1/Multiagentes_Eq4.jpg "Diagramas de la primera entrega")
 
 ## Agentes involucrados
 ### Combine Harvester
