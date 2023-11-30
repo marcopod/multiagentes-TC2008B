@@ -5,7 +5,7 @@ const app = express()
 app.get('/get_result', async (req, res) => {
     try {
         // Comando para ejecutar el script Python
-        const comando = 'python logic.py';
+        const comando = 'python simulation.py';
 
         // Ejecutar el comando
         exec(comando, (error, stdout, stderr) => {
