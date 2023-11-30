@@ -1,0 +1,13 @@
+{
+  "name": "entrega_3",
+  "version": "1.0.0",
+  "description": "entrega 3",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
