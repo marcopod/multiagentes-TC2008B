@@ -2,7 +2,7 @@ import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
 
-EPISODES = 100
+EPISODES = 10_000
 MAX_STEPS = 200
 COLUMNS = 10
 ROWS = 5
@@ -398,6 +398,6 @@ best_path2_reformat = [tuple(element) for element in best_path2]
 
 join_paths = [best_path1_reformat, best_path2_reformat]
 
-path_obstacle = [join_paths, obstacle_position1, obstacle_position2]
+path_with_obstacle = [join_paths, obstacle_position1, obstacle_position2]
 # print(join_paths)
-print(path_obstacle)
+print(path_with_obstacle)

@@ -10,6 +10,19 @@ Marco Ottavio Podesta Vezzali A00833604
 
 Sergio Ortíz Malpica A01284951
 
+# Instructions
+### In the terminal type the following commands
+`cd .\Entrega_3\`
+`npm i`
+`node server.js`
+
+### Wait until the server is running and listening in port 3000
+
+### Open Unity
+
+### Enter playmode
+
+
 # Entrega 1
 ![Diagramas_01](Entrega_1/Multiagentes_Eq4.jpg "Diagramas de la primera entrega")
 
