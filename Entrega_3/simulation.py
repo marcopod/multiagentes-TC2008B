@@ -2,7 +2,7 @@ import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
 
-EPISODES = 10
+EPISODES = 10_000
 MAX_STEPS = 200
 COLUMNS = 10
 ROWS = 5
@@ -394,9 +394,11 @@ agent2 = QLearningAgent2(env2)
 best_path2, wheat_collected2 = train_agent(env2, agent2, episodes=EPISODES)
 
 best_path1_reformat = [element for element in best_path1]
+best_path1_modified = [[x[0] + 6, x[1] + 6] for x in best_path1]
 best_path2_reformat = [element for element in best_path2]
+best_path2_modified = [[x[0] + 6 + 5, x[1] + 6] for x in best_path2]
 
-join_paths = [best_path1_reformat, best_path2_reformat]
+join_paths = [best_path1_modified, best_path2_modified]
 
 path_with_obstacle = [join_paths, obstacle_position1, obstacle_position2]
 
