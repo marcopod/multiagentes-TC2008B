@@ -22,8 +22,6 @@ Sergio Ortíz Malpica A01284951
 
 ### Enter playmode
 
-
-# Entrega 1
 ![Diagramas_01](Entrega_1/Multiagentes_Eq4.jpg "Diagramas de la primera entrega")
 
 ## Agentes involucrados
