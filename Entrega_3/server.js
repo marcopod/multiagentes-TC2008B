@@ -22,12 +22,24 @@ app.get('/get_result', async (req, res) => {
             const resultadoPython = stdout.trim();
             console.log(`Resultado de Python: ${resultadoPython}`);
 
-            // Puedes usar 'resultadoPython' como desees en tu código de JavaScript
-            // por ejemplo, asignarlo a una variable
-            const miVariableJS = resultadoPython;
-            console.log(`Mi variable de JavaScript: ${miVariableJS}`);
+            let parsed_array = JSON.parse(resultadoPython);
+            const coord1 = parsed_array[0][0];
+            const coord2 = parsed_array[0][0];
+
+            const obstacle1 = parsed_array[1];
+            const obstacle2 = parsed_array[2];
+
+            // console.log(JSON.stringify(array, null, 2));
+            console.log("array:", parsed_array[1]);
+
+            // console.log(`Mi variable de JavaScript: ${miVariableJS}`);
             return res.status(200).json({
-                data: resultadoPython
+                data: {
+                    coord1: coord1,
+                    coord2: coord2,
+                    obstacle1: obstacle1,
+                    obstacle2: obstacle2,
+                }
             });
         });
         

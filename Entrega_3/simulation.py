@@ -2,7 +2,7 @@ import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
 
-EPISODES = 10_000
+EPISODES = 10
 MAX_STEPS = 200
 COLUMNS = 10
 ROWS = 5
@@ -393,11 +393,25 @@ obstacle_position2 = env2.obstacle_position
 agent2 = QLearningAgent2(env2)
 best_path2, wheat_collected2 = train_agent(env2, agent2, episodes=EPISODES)
 
-best_path1_reformat = [tuple(element) for element in best_path1]
-best_path2_reformat = [tuple(element) for element in best_path2]
+best_path1_reformat = [element for element in best_path1]
+best_path2_reformat = [element for element in best_path2]
 
 join_paths = [best_path1_reformat, best_path2_reformat]
 
 path_with_obstacle = [join_paths, obstacle_position1, obstacle_position2]
+
+def convert_arrays(element):
+    if isinstance(element, np.ndarray):
+        # Convert NumPy arrays to Python lists
+        return element.tolist()
+    elif isinstance(element, list):
+        # Recursively apply this conversion to each element in the list
+        return [convert_arrays(sub_element) for sub_element in element]
+    else:
+        # If it's neither a NumPy array nor a list, return the element as is
+        return element
+
+path_converted = convert_arrays(path_with_obstacle)
+
 # print(join_paths)
-print(path_with_obstacle)
+print(path_converted)
