@@ -25,7 +25,7 @@ Sergio Ortíz Malpica A01284951
 4. Enter playmode
 
 
-![Diagramas_01](Entrega_1/Multiagentes_Eq4_01.jpg "Diagramas de la primera entrega")
+![Diagramas_01](Entrega_1/Agentes_Eq4_01.jpg "Diagramas de la primera entrega")
 
 ## Agentes involucrados
 ### Combine Harvester
