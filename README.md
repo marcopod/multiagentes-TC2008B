@@ -11,20 +11,22 @@ Marco Ottavio Podesta Vezzali A00833604
 Sergio Ortíz Malpica A01284951
 
 # Instructions
-### In the terminal type the following commands
+0. copy the github repo
+
+1. In the terminal type the following commands
 `cd .\Entrega_3\`
 `npm i`
 `node server.js`
 
-### Wait until the server is running and listening in port 3000
+2. Wait until the server is running and listening in port 3000
 
-### Open Unity
+3. Download the Entrega_3/unity.zip folder and open the project in unity
 
-### Enter playmode
+4. Enter playmode
 
 
 # Entrega 1
-![Diagramas_01](Entrega_1/Multiagentes_Eq4.jpg "Diagramas de la primera entrega")
+![Diagramas_01](Entrega_1/Multiagentes_Eq4_01.jpg "Diagramas de la primera entrega")
 
 ## Agentes involucrados
 ### Combine Harvester
